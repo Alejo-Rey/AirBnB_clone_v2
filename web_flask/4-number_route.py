@@ -37,7 +37,7 @@ def py(text='is cool'):
 @app.route('/number/<int:n>')
 def num():
     ''' display only if is a numer '''
-    return '%d is a number' % n
+    return '{:d} is a number'.format(n)
 
 
 if __name__ == '__main__':
