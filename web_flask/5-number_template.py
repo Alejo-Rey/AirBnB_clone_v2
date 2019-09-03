@@ -43,7 +43,7 @@ def num(n):
 @app.route('/number_template/<int:n>')
 def tem_num(n):
     ''' give a template of junja2 '''
-    return render_template('templates/5-number.html', n=n)
+    return render_template('5-number.html', n=n)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
