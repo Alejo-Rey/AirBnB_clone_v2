@@ -52,7 +52,7 @@ class DBStorage:
             City, Amenity, Place, Review]'''
             classes = [State, City, User, Place, Review, Amenity]
             for clas in classes:
-                data = self.__session.query(eval(clas)).all()
+                data = self.__session.query(clas).all()
                 if data is not None:
                     for x in data:
                         key = (type(x).__name__ + '.' + x.id)
